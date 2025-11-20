@@ -6,15 +6,15 @@ variable "region" {
 }
 
 variable "vpc-name" {
-  description = "VPC Name for our Jumphost server"
+  description = "VPC Name for our jumphost33 server"
   type = string
-  default = "Jumphost-vpc"
+  default = "jumphost33-vpc"
 }
 
 variable "igw-name" {
-  description = "Internet Gate Way Name for our Jumphost server"
+  description = "Internet Gate Way Name for our jumphost33 server"
   type = string
-  default = "Jumphost-igw"
+  default = "jumphost33-igw"
 }
 
 variable "subnet-name1" {
@@ -24,7 +24,7 @@ variable "subnet-name1" {
 }
 
 variable "subnet-name2" {
-  description = "Subnet Name for our Jumphost server"
+  description = "Subnet Name for our jumphost33 server"
   type = string
   default = "Public-subnet2"
 }
@@ -43,22 +43,22 @@ variable "private_subnet_name2" {
 }
 
 variable "rt-name" {
-  description = "Route Table Name for our Jumphost server"
+  description = "Route Table Name for our jumphost33 server"
   type = string
-  default = "Jumphost-rt"
+  default = "jumphost33-rt"
 }
 
 variable "sg-name" {
-  description = "Security Group for our Jumphost server"
+  description = "Security Group for our jumphost33 server"
   type = string
-  default = "Jumphost-sg"
+  default = "jumphost33-sg"
 }
 
 
 variable "iam-role" {
-  description = "IAM Role for the Jumphost Server"
+  description = "IAM Role for the jumphost33 Server"
   type = string
-  default = "Jumphost-iam-role1"
+  default = "jumphost33-iam-role1"
 }
 
 variable "ami_id" {
@@ -80,8 +80,8 @@ variable "key_name" {
 }
 
 variable "instance_name" {
-  description = "EC2 Instance name for the jumphost server"
+  description = "EC2 Instance name for the jumphost33 server"
   type        = string
-  default     = "Jumphost-server"
+  default     = "jumphost33-server"
 }
 #
