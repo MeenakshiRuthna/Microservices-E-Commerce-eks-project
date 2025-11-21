@@ -114,7 +114,7 @@ resource "aws_iam_instance_profile" "worker" {
 # ----------------------------
 data "aws_vpc" "main" {
   tags = {
-    Name = "jumphost22-vpc"
+    Name = "Jumphost22-vpc"
   }
 }
 
@@ -138,7 +138,7 @@ data "aws_security_group" "selected" {
   vpc_id = data.aws_vpc.main.id
   filter {
     name   = "tag:Name"
-    values = ["jumphost22-sg"]
+    values = ["Jumphost22-sg"]
   }
 }
 
